@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "yfp2EzhDGlo=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\estudianteuc\\Desktop\\DESARROLLO DE APLICACIONES WEB\\SistemaGestion\\SistemaGestion.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\estudianteuc\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.11\\microsoft.aspnetcore.openapi.10.0.11.nupkg.sha512",
+    "C:\\Users\\estudianteuc\\.nuget\\packages\\microsoft.openapi\\2.7.5\\microsoft.openapi.2.7.5.nupkg.sha512"
+  ],
+  "logs": []
+}
