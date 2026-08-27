@@ -1,6 +1,26 @@
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddCors(options =>
+{
+    options.AddDefaultPolicy( policity =>
+    {
+        policity
+            .AllowAnyOrigin()
+            .AllowAnyHeader()
+            .AllowAnyMethod();
+    });
+    }
+);
+
 var app = builder.Build();
+
+app.UseCors();
+
+app.MapGet("/", () =>
+{
+    return "API Sistema de Gestión funcionando";
+});
+
 
 app.MapGet("/", () =>
 {
@@ -93,5 +113,7 @@ app.MapGet("/api/estudiantes", () =>
   }
     });
 });
+
+var port = Environment.GetEnvironmentVariable("Port") ?? "10000";
 
 app.Run();
